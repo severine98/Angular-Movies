@@ -1,0 +1,53 @@
+@import "src/variables.scss";
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $primary-color;
+  height: $nav-height;
+  font-size: 2em;
+
+  h1 {
+    padding-left: $base-spacing;
+  }
+
+  .links {
+    height: 100%;
+    width: 150px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    ul {
+      width: 150px;
+      position: absolute;
+      top: $nav-height;
+      right: 0;
+      display: none;
+      list-style-type: none;
+      background-color: $primary-color;
+      font-size: 0.65em;
+      border-top: solid white 2px;
+      text-align: center;
+
+      &.show {
+        display: unset;
+      }
+
+      li {
+        padding: 5px;
+
+        &:hover {
+          background-color: yellow;
+        }
+      }
+    }
+  }
+}

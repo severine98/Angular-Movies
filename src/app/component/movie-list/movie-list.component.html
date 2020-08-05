@@ -1,0 +1,9 @@
+<!-- <section class="movie-list">
+  <app-movie-card [movie]="jaws"></app-movie-card>
+  <app-movie-card [movie]="forrestGump"></app-movie-card>
+  <app-movie-card [movie]="inception"></app-movie-card> 
+</section> -->
+
+<section class="movie-list">
+  <app-movie-card *ngFor="let movie of movieArray" [movie]="movie"></app-movie-card>
+</section>

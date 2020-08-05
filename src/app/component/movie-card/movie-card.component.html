@@ -1,0 +1,10 @@
+<section class="movie-card">
+  <div class="card">
+    <h2>{{ movie.title }}</h2>
+    <p>{{ movie.year }}</p>
+    <img [src]="movie.poster" [alt]="altText" />
+  </div>
+  <div class="description">
+    <p>{{movie.description}}</p>
+  </div>
+</section>
