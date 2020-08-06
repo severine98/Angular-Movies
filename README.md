@@ -1,4 +1,8 @@
-# MovieDbFlags
+# MovieWorm - Angular
+An application showcasing a few great films where a brief description of each film is given upon hover. The user can interact with the sorting options to display the films alphabetically and by release date.
+
+# Purpose of this project
+A first attempt at using Angular. This project was developed in 1 day as part of practicing a new language and framework. This was a good opportunity to understand the differences between React and Angular, and therefore between Libraries and Frameworks. This was good practice in terms of building an Angular project from scratch, writting in TypeScript, using directives and services. My next steps in approaching this project are to add more styling as they were not the primary focus, increment more functionality, and reading about Http and Observable Services in Angular. 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.5.
 
