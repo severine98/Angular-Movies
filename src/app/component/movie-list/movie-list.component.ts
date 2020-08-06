@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {IMovie, movieArray} from "src/assets/movies"; 
+import { IMovie, movieArray } from "src/assets/movies";
 import { MovieService } from 'src/app/movie.service';
 import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
 
@@ -15,7 +15,23 @@ export class MovieListComponent implements OnInit {
   constructor(private _movieService: MovieService) { }
 
   ngOnInit(): void {
+    this.movieArray = this._movieService.getMovieAToZ();
+  }
+
+  getMovieZToA(): void {
     this.movieArray = this._movieService.getMovieZToA();
+  }
+
+  getMovieAToZ(): void {
+    this.movieArray = this._movieService.getMovieAToZ();
+  }
+
+  getMovieNewToOld(): void {
+    this.movieArray = this._movieService.getMovieNewToOld();
+  }
+
+  getMovieOldToNew(): void {
+    this.movieArray = this._movieService.getMovieOldToNew();
   }
 
 }
